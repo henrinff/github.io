@@ -23,9 +23,9 @@
   --transition:180ms cubic-bezier(0.16,1,0.3,1);
 }
 [data-theme="dark"],:root{
-  --bg:#5a3a26;--surface:#6a4530;--surface-2:#734c36;--surface-offset:#7d5540;
+  --bg:#3a2317;--surface:#6a4530;--surface-2:#734c36;--surface-offset:#7d5540;
   --divider:#8a624c;--border:#a07760;--text:#f1e5dc;--text-muted:#d0b8a8;
-  --text-faint:#9f7e6f;--text-inverse:#5a3a26;--primary:#e6b48b;--primary-hover:#d89c72;
+  --text-faint:#9f7e6f;--text-inverse:#3a2317;--primary:#e6b48b;--primary-hover:#d89c72;
   --primary-active:#bd7f57;--primary-dim:rgba(230,180,139,0.14);
   --orange:#f0c08f;--green:#d8b28a;--red:#c78973;--yellow:#e0b787;--purple:#cda38b;
   --shadow-sm:0 1px 2px rgba(0,0,0,0.3);--shadow-md:0 4px 12px rgba(0,0,0,0.4);--shadow-lg:0 12px 32px rgba(0,0,0,0.5);
@@ -188,13 +188,13 @@ button{cursor:pointer;background:none;border:none}
           <span class="env-key">LOCATION</span>
           <span class="env-val"><span class="eq">=</span>Chapel Hill, NC</span>
           <span class="env-key">STATUS</span>
-          <span class="env-val"><span class="eq">=</span><span class="val-green">Incoming @ Apple</span></span>
+          <span class="env-val"><span class="eq">=</span><span class="val-green">Student @ UNC-Chapel Hill</span></span>
           <span class="env-key">FOCUS</span>
           <span class="env-val"><span class="eq">=</span><span class="val-highlight">ML</span><span class="dot-sep">&middot;</span>Agents<span class="dot-sep">&middot;</span>Analytics</span>
           <span class="env-key">PREV_ROLES</span>
           <span class="env-val"><span class="eq">=</span>Hazlo.<span class="dot-sep">&middot;</span>UNC-CSDS<span class="dot-sep">&middot;</span>McGill University<span class="dot-sep">&middot;</span>US Air Force</span><span class="dot-sep">&middot;</span>Perplexity</span>
           <span class="env-key">UPTIME</span>
-          <span class="env-val"><span class="eq">=</span><span id="uptime">00:04:38</span></span>
+          <span class="env-val"><span class="eq">=</span><span id="uptime">00:00:00</span></span>
         </div>
       </div>
       <div class="term-divider"></div>
@@ -213,7 +213,7 @@ button{cursor:pointer;background:none;border:none}
             <span class="project-icon">&#128172;</span><span>Light Rail Violence</span>
           </a>
           <a class="project-item" onclick="openModal('tourist');return false;" href="#">
-            <span class="project-icon">&#128172;</span><span>TA (Geospatial Data Science)</span>
+            <span class="project-icon">&#128172;</span><span>Hazlo.</span>
           </a>
         </div>
         <div class="projects-hint">// click a project to see details</div>
@@ -245,7 +245,7 @@ button{cursor:pointer;background:none;border:none}
       </div>
     </div>
   </div>
-  <div class="footer-hint">press <span style="color:var(--primary)">Esc</span> to close modals &nbsp;&middot;&nbsp; built with &#10084; in Chapel Hill</div>
+  <div class="footer-hint">fun facts: i'm named after french painter<span style="color:var(--primary)">Henri Matisse</span> and am filipino-french-american. &nbsp;&middot;&nbsp; interests: &#9992; reading, flying, running, fencing, snowfall, hotd/got, all-american</div>
 </div>
 
 <div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
@@ -288,7 +288,7 @@ setInterval(updateUptime,1000);
 var projects={
   "ai-study":{title:"&#128172; AI Study Buddy",body:"<p>An intelligent study assistant using LLM-powered question generation and spaced-repetition scheduling to help students retain course material.</p><p>Multi-agent architecture: a 'Teacher' agent that generates quizzes from uploaded notes, and a 'Tracker' agent that monitors performance and adapts difficulty.</p><p><span class='tag'>Python</span><span class='tag'>LangChain</span><span class='tag'>OpenAI</span><span class='tag'>FastAPI</span><span class='tag'>React</span></p>"},
   "pearson":{title:"&#128172; Light Rail Violence",body:"<p>A project examining the Light Rail Violence case using data, context, and reporting to present the story clearly.</p><p><a href='https://github.com/henrinff/iryna' target='_blank' rel='noopener noreferrer' style='color:var(--primary);text-decoration:underline;display:inline-block;margin-bottom:0.75rem'>&#127760; View the GitHub repo &rarr;</a></p><p><span class='tag'>Python</span><span class='tag'>Data Analysis</span><span class='tag'>Geospatial</span><span class='tag'>Storytelling</span></p>"},
-  "tourist":{title:"&#128172; The Traveling Tourist Problem",body:"<p>A novel variant of the Traveling Salesman Problem applied to tourist itinerary optimization &mdash; incorporating opening hours, transit time, crowd prediction, and user preferences.</p><p>Implemented multiple heuristic solvers (genetic algorithm, simulated annealing, greedy nearest-neighbor) benchmarked across 10 city datasets.</p><p><span class='tag'>Python</span><span class='tag'>OR-Tools</span><span class='tag'>Google Maps API</span><span class='tag'>Streamlit</span><span class='tag'>Algorithms</span></p>"}
+  "tourist":{title:"&#128172; Hazlo.",body:"<p>dddd.</p><p>Sports-tech</p><p><span class='tag'>Python</span><span class='tag'>OR-Tools</span><span class='tag'>Google Maps API</span><span class='tag'>Streamlit</span><span class='tag'>Algorithms</span></p>"}
 };
 
 function openModal(id){
